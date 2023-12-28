@@ -68,7 +68,7 @@ const tab = () => {
     { category: "", subcategory: "적금", item: "" },
     { category: "", subcategory: "정기예금", item: "" },
     { category: "", subcategory: "대출", item: "전체상품(대출)" },
-    { category: "", subcategory: "", item: "추가사용자리서치메뉴명1" },
+    { category: "", subcategory: "", item: "추가사용자리서치메뉴명1", link: 'https://www.kbstar.com/'},
     { category: "", subcategory: "", item: "추가사용자리서치메뉴명2" },
     { category: "", subcategory: "", item: "추가사용자리서치메뉴명3" },
     { category: "", subcategory: "투자상품", item: "펀드" },
@@ -518,6 +518,9 @@ const tab = () => {
       if (el.item.length) {
         var btn = document.createElement("button");
         btn.textContent = el.item;
+        if (el.link !== undefined) {
+          btn.onclick = () => {location.href = el.link}
+        }
         document
           .querySelector(
             ".layout-wrap > .content .parent:last-of-type li:last-of-type .deep-inner"
