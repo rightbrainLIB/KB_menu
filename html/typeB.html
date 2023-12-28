@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KB UX : 사용자 테스트</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/contentB.css" rel="stylesheet" />
+    <script src="../assets/js/b.js"></script>
+  </head>
+  <body>
+    <!-- .top -->
+    <div class="top">
+      <div class="function">
+        <div class="left">
+          <button type="button" class="exit">로그아웃</button>
+        </div>
+        <div class="right">
+          <button type="button" class="lan">Language</button>
+          <button type="button" class="close">
+            <span class="blind">닫기</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="log">
+        <div class="left">
+          <span>최근 접속</span>
+          <span>2021.03.29 14:00:45</span>
+        </div>
+      </div>
+      <div class="serch-bar">
+        <input type="text" placeholder="메뉴를 검색해보세요." readonly />
+        <button type="button" class="submit">
+          <span class="blind">검색</span>
+        </button>
+      </div>
+
+      <ul class="div-link">
+        <li>
+          <button type="button" class="custom">고객센터</button>
+        </li>
+        <li>
+          <button type="button" class="auth">인증/보안</button>
+        </li>
+        <li>
+          <button type="button" class="setting">환경설정</button>
+        </li>
+      </ul>
+    </div>
+    <!-- // .top -->
+    <!-- .layout-wrap -->
+    <div class="layout-wrap">
+      <!-- .sticky2 -->
+      <div class="sticky2">
+        <div class="inner">
+          <div class="menu-list">
+            <button type="button" class="active">
+              <span>최근/MY</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- // .sticky2 -->
+      <!-- .content -->
+      <div class="content">
+        <div class="parent">
+          <hr />
+          <h2>최근 사용 메뉴</h2>
+          <ol>
+            <li class="mark">
+              <!-- 
+                bookmark : 기본 상태
+                bookmark.active : 활성화
+                bookmark.empty : 비움
+               -->
+              <button type="button" class="bookmark"></button>
+              <button type="button" class="type1">
+                <span>정기예금</span>
+              </button>
+            </li>
+            <li class="mark">
+              <button type="button" class="bookmark example"></button>
+              <button type="button" class="type1">
+                <span>은행에 서류제출</span>
+              </button>
+            </li>
+            <li class="mark">
+              <button type="button" class="bookmark"></button>
+              <button type="button" class="type1">
+                <span>리브포켓이체</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="parent exception">
+          <hr />
+          <h2>MY 메뉴<button type="button">설정</button></h2>
+          <ol>
+            <li>
+              <button type="button" class="type1">
+                <span>전체계좌조회</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="type1">
+                <span>증명서 발급</span>
+              </button>
+            </li>
+            <li class="add">
+              <button type="button" class="type1">
+                <span>은행에 서류제출</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- // .content -->
+    </div>
+    <!-- // .layout-wrap -->
+    <!-- popup -->
+    <div class="popup">
+      <div class="search-wrap">
+        <input
+          type="text"
+          inputmode="search"
+          enterkeyhint="search"
+          placeholder="메뉴를 검색해보세요."
+        />
+        <button type="button" class="del">
+          <span class="blind">검색어 삭제</span>
+        </button>
+        <button type="button" class="close">닫기</button>
+      </div>
+      <div class="search-result">
+        <div class="empty">
+          <i></i>
+          <p>검색어를 입력해주세요.</p>
+        </div>
+        <div class="data">
+          <div class="ect-search">
+            <p>더 많은 검색결과가 필요하세요?</p>
+            <button type="button">
+              <img src="../assets/image/textlink.png" alt="" />
+            </button>
+          </div>
+          <div class="data-wrap">
+            <div class="search-li">
+              <hr />
+              <h2>상품가입</h2>
+              <ol>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub></span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품
+                    <i class="right-arrow"></i>
+                    <sub class="blue">펀드</sub>
+                    <i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 포트폴리오</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub
+                    ><i class="right-arrow"></i>연금저축<sub class="blue"
+                      >펀드</sub
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i>케이봇쌤 포트폴리오<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 포트폴리오 설계</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i>케이봇쌤 포트폴리오<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 포트폴리오 조회</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i>케이봇쌤 포트폴리오<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 포트폴리오 알림</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >투자상품<i class="right-arrow"></i>케이봇쌤 포트폴리오<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 포트폴리오 자동이체</span
+                  >
+                </li>
+              </ol>
+            </div>
+            <div class="search-li">
+              <hr />
+              <h2>상품관리/해지</h2>
+              <ol>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub
+                    ><i class="right-arrow"></i>보유<sub class="blue">펀드</sub>
+                    진단</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub
+                    ><i class="right-arrow"></i>보유<sub class="blue">펀드</sub>
+                    진단<i class="right-arrow"></i>내
+                    <sub class="blue">펀드</sub> 진단</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub
+                    ><i class="right-arrow"></i>보유<sub class="blue">펀드</sub>
+                    진단<i class="right-arrow"></i>보유<sub class="blue"
+                      >펀드</sub
+                    >
+                    분석</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub
+                    ><i class="right-arrow"></i>보유<sub class="blue">펀드</sub>
+                    진단<i class="right-arrow"></i>실질수익률 보고서</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 기준가/수익률 조회</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 입금</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 입금<i class="right-arrow"></i
+                    >연금<sub class="blue">펀드</sub> 입금</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 입금<i class="right-arrow"></i
+                    >포트폴리오 일괄입금</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 예약취소</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 환매/해약 관리<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 환매신청</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 환매/해약 관리<i
+                      class="right-arrow"
+                    ></i
+                    ><sub class="blue">펀드</sub> 환매예상조회</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><sub class="blue">펀드</sub><i class="right-arrow"></i
+                    ><sub class="blue">펀드</sub> 환매/해약 관리<i
+                      class="right-arrow"
+                    ></i
+                    >포트폴리오 일관환매</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
