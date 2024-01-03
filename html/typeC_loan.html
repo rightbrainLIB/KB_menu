@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KB UX : 사용자 테스트</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/loan.css" rel="stylesheet" />
+		<script src="../assets/js/loan.js"></script>
+  </head>
+  <body>
+		<header class="loan-header">
+			<div class="title-wrap">
+				<button type="button" class="back-btn"><span class="blind">뒤로가기</span></button>
+				<h2>빌리기</h2>
+			</div>
+			<div>
+				<button type="button" class="home-btn"><span class="blind">홈</span></button>
+				<button type="button" class="menu-btn"><span class="blind">메뉴</span></button>
+			</div>
+		</header>
+		<div class="contents">
+			<div class="tabs">
+				<button type="button" class="tab active">대출받기</button>
+				<button type="button" class="tab">대출진행현황</button>
+				<button type="button" class="tab">대출관리</button>
+			</div>
+			<div class="tab-contents-wrap">
+				<!-- 대출받기 -->
+				<div class="tab-contents active">
+					<img src="../assets/image/loan-tab01.png" />
+				</div>
+				<!-- //대출받기 -->
+				<!-- 대출진행현황 -->
+				<div class="tab-contents">
+					<div class="tab-title">
+						<h3><strong>김국민</strong>님이 진행중인 대출상품을<br />바로 조회해 보세요!</h3>
+						<div class="loan-num"><strong>진행중인 대출</strong> <span class="num">2</span>건</div>
+					</div>
+					<ul class="loan-lists">
+						<li class="loan-box">
+							<div class="info">
+								<div class="label">심사중</div>
+								<p>빠르고 간편한 신차 자동차 대출</p>
+								<p class="loan-title">KB 매직카대출(신차 구매용)</p>
+							</div>
+							<div class="btns">
+								<button type="button" class="gray-btn">서류 다시 제출하기</button>
+								<button type="button" class="gray-btn">진행 현황 조회</button>
+							</div>
+						</li>
+						<li class="loan-box">
+							<div class="info">
+								<div class="label">심사완료</div>
+								<p>KB 스타뱅킹 전용 아파트 담보대출</p>
+								<p class="loan-title">KB스타 아파트담보대출</p>
+							</div>
+							<div class="btns">
+								<button type="button" class="gray-btn">약정하기</button>
+								<button type="button" class="gray-btn">진행 현황 조회</button>
+							</div>
+						</li>
+					</ul>
+					<div class="bottom-area">
+						<div class="title-wrap">
+							<p>대출신청을 위한<br /><strong>상담이 필요하신가요?</strong></p>
+							<img src="../assets/image/bottom-img.png" />
+						</div>
+						<button type="button" class="gray-btn lg">상담하기</button>
+					</div>
+				</div>
+				<!-- //대출진행현황 -->
+				<!-- 대출관리 -->
+				<div class="tab-contents">
+					<div class="tab-title">
+						<h3><strong>김국민</strong>님이 받은 대출상품을<br />관리해 보세요!</h3>
+						<div class="loan-num"><strong>받은 대출</strong> <span class="num">3</span>건</div>
+					</div>
+					<ul class="loan-lists">
+						<li class="loan-box">
+							<button type="button" class="more-btn"><span class="blind">더보기</span></button>
+							<div class="info">
+								<div class="label">대출</div>
+								<p>(비대면시청)버팀목 전세자금대출</p>
+								<p class="loan-title">55,000,000원</p>
+								<div class="date">가입일 2023.12.27</div>
+							</div>
+							<div class="btns only">
+								<button type="button" class="gray-btn">대출 계약 철회</button>
+							</div>
+						</li>
+						<li class="loan-box">
+							<button type="button" class="more-btn sheet"><span class="blind">더보기</span></button>
+							<div class="info">
+								<div class="label">대출</div>
+								<p>KB 스타뱅킹 전용 아파트 담보대출</p>
+								<p class="loan-title">KB스타 아파트담보대출</p>
+								<div class="date">가입일 2023.12.27</div>
+							</div>
+							<div class="btns">
+								<button type="button" class="gray-btn">이자/월부금 입금</button>
+								<button type="button" class="gray-btn">대출금 상환</button>
+							</div>
+						</li>
+						<li class="loan-box">
+							<button type="button" class="more-btn"><span class="blind">더보기</span></button>
+							<div class="info">
+								<div class="label">대출</div>
+								<p>KB 스타뱅킹 전용 아파트 담보대출</p>
+								<p class="loan-title">KB스타 아파트담보대출</p>
+								<div class="date">가입일 2023.12.27</div>
+							</div>
+							<div class="btns only">
+								<button type="button" class="gray-btn">대출 기한연장</button>
+							</div>
+						</li>
+					</ul>
+					<div class="bottom-area">
+						<div class="title-wrap">
+							<p>대출신청을 위한<br /><strong>상담이 필요하신가요?</strong></p>
+							<img src="../assets/image/bottom-img.png" />
+						</div>
+						<button type="button" class="gray-btn lg">상담하기</button>
+					</div>
+				</div>
+				<!-- //대출관리 -->
+			</div>
+		</div>
+		<div class="bottom-sheet">
+			<div class="sheet-top">
+				<h2>KB 직장인든든 신용대출</h2>
+				<button type="button" class="close-btn"><span class="blind">닫기</span></button>
+			</div>
+			<ul>
+				<li>
+					<div>대출 계약 철회</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>대출한도 변경/해지</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>대출 기한연장</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>개인대출 금리인하 요구권</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>개인대출 통지서비스 변경</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>개인대출 할부금(이자)납일일 변경</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+				<li>
+					<div>통장자동대출 이자납입내역 조회</div>
+					<p>상세설명 상세설명 상세설명</p>
+				</li>
+			</ul>
+		</div>
+		<div class="dim"></div>
+	</body>
+	</html>
