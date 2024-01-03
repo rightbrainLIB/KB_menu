@@ -290,6 +290,7 @@ body {
 	font-weight: 300;
 	line-height: 21px;
 	letter-spacing: -0.02em;
+	color: #26282C;
 	text-align: center;
 	box-sizing: border-box;
 }
@@ -354,7 +355,7 @@ body {
 .bottom-sheet.open {
 	display: block;
 	bottom: 0;
-	transition: 0.32s ease-out;
+	transition: 0.3s ease-out;
 }
 .bottom-sheet .sheet-top {
 	box-sizing: border-box;
