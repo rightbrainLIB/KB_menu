@@ -54,20 +54,20 @@ const tab = () => {
    
     { category: "금융상품", subcategory: "", item: "" },
     { category: "", subcategory: "금융상품 홈", item: "" },
-    { category: "", subcategory: "모으기", item: "입출금" },
-    { category: "", subcategory: "", item: "적금" },
-    { category: "", subcategory: "", item: "정기예금" },
-    { category: "", subcategory: "", item: "외화예금" },
-    { category: "", subcategory: "빌리기", item: "대출" , link: './typeC_loan.html'},
-    { category: "", subcategory: "투자하기", item: "펀드" },
+    { category: "", subcategory: "입출금", item: "" },
+    { category: "", subcategory: "적금", item: "" },
+    { category: "", subcategory: "정기예금", item: "" },
+    { category: "", subcategory: "외화예금", item: "" },
+    { category: "", subcategory: "대출", item: "" , cateLink: './typeC_loan.html'},
+    { category: "", subcategory: "투자", item: "펀드" },
     { category: "", subcategory: "", item: "신탁" },
     { category: "", subcategory: "", item: "ISA" },
     { category: "", subcategory: "", item: "골드/실버" },
     { category: "", subcategory: "", item: "증권연계" },
     { category: "", subcategory: "", item: "포트폴리오" },
-    { category: "", subcategory: "미래준비하기", item: "청약/채권" },
-    { category: "", subcategory: "", item: "퇴직연금" },
-    { category: "", subcategory: "", item: "보험" },
+    { category: "", subcategory: "청약/채권", item: "" },
+    { category: "", subcategory: "퇴직연금", item: "" },
+    { category: "", subcategory: "보험", item: "" },
 
 
     { category: "자산관리", subcategory: "", item: "" },
@@ -250,6 +250,9 @@ const tab = () => {
       // 좌측 메뉴 (1뎁스)
       var btn = document.createElement("button");
       btn.textContent = el.category;
+      if (el.cateLink !== undefined) {
+        btn.onclick = () => {location.href = el.cateLink}
+      }
       document.querySelector(".menu-list").appendChild(btn);
       // 우측 메뉴 (타이틀)
       var wrap = document.createElement("div");
@@ -270,6 +273,9 @@ const tab = () => {
         var span = document.createElement("span");
         span.textContent = el.subcategory;
         btn.appendChild(span);
+        if (el.cateLink !== undefined) {
+          btn.onclick = () => {location.href = el.cateLink}
+        }
         if (el.item.length) {
           btn.classList.add("type2");
         } else {
