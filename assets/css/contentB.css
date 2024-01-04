@@ -55,6 +55,7 @@ body {
   font-family: "KBFGTEXT", "KBFGDISPLAY", sans-serif;
   color: #484b51;
   height: 100%;
+  overflow: hidden;
 }
 *:not(body) {
   font-family: inherit;
