@@ -1,8 +1,11 @@
 const back = () => {
 	const backBtn = document.querySelector(".back-btn");
+	const menuBtn = document.querySelector(".menu-btn");
 	
 	backBtn.addEventListener("click", () => {
-		console.log("sss")
+		window.history.go(-1) 
+	})
+	menuBtn.addEventListener("click", () => {
 		window.history.go(-1) 
 	})
 }
