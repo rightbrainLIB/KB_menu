@@ -206,6 +206,27 @@ body {
 .tab-title {
 	padding: 0 27px;
 }
+.tab-title p {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	letter-spacing: -0.02em;
+}
+.tab-title p strong {
+	font-weight: 700;
+	margin-left: 3px;
+}
+.tab-title p .info-icon {
+	display: block;
+	width: 16px;
+	height: 15px;
+	background-image: url(../image/ic-info-16.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+}
 .tab-contents h3, .tab-contents .loan-num  {
 	font-size: 18px;
 	line-height: 25px;
@@ -280,6 +301,9 @@ body {
 	background-repeat: no-repeat;
 	top: 20px;
 	right: 20px;
+}
+.tab-contents:nth-child(3) .info {
+	margin-bottom: 15px;
 }
 
 .gray-btn {
