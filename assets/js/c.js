@@ -52,7 +52,7 @@ const tab = () => {
     { category: "", subcategory: "계좌이동서비스(자동이체통합관리)", item: "", },
     { category: "", subcategory: "리브포켓이체", item: "" },
    
-    { category: "금융상품", subcategory: "", item: "" },
+    { category: "상품가입/관리", subcategory: "", item: "" },
     { category: "", subcategory: "금융상품 홈", item: "" },
     { category: "", subcategory: "입출금", item: "" },
     { category: "", subcategory: "적금", item: "" },
