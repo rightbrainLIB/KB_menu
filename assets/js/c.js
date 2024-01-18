@@ -51,7 +51,7 @@ const tab = () => {
     { category: "", subcategory: "", item: "ID모아보기 이체결과조회" },
     { category: "", subcategory: "계좌이동서비스(자동이체통합관리)", item: "", },
     { category: "", subcategory: "리브포켓이체", item: "" },
-   
+
     { category: "상품가입", subcategory: "", item: "" },
     { category: "", subcategory: "금융상품 홈", item: "" },
     { category: "", subcategory: "입출금+카드", item: "" },
@@ -148,7 +148,7 @@ const tab = () => {
     { category: "공과금", subcategory: "", item: "" },
     { category: "", subcategory: "공과금납부하기", item: "" },
     { category: "", subcategory: "공과금 납부조회/취소", item: "" },
-    
+
     { category: "외환", subcategory: "", item: "" },
     { category: "", subcategory: "환율", item: "환율조회" },
     { category: "", subcategory: "", item: "환율동향정보" },
@@ -169,7 +169,7 @@ const tab = () => {
     { category: "", subcategory: "", item: "외환알림서비스" },
     { category: "", subcategory: "", item: "외화송금주소록 관리" },
     { category: "", subcategory: "외환수수료납부/조회", item: "" },
-    
+
     { category: "금융편의", subcategory: "", item: "" },
     { category: "", subcategory: "ATM/창구출금", item: "" },
     { category: "", subcategory: "미성년자계좌신규미리작성", item: "" },
@@ -226,7 +226,7 @@ const tab = () => {
     { category: "", subcategory: "부동산", item: "" },
     { category: "", subcategory: "건강", item: "" },
     { category: "", subcategory: "쇼핑", item: "" },
-    
+
     { category: "KB금융그룹", subcategory: "", item: "" },
     { category: "", subcategory: "KB증권", item: "KB증권 홈" },
     { category: "", subcategory: "", item: "Easy 주식매매" },
@@ -373,7 +373,7 @@ const tab = () => {
     SscrollTop;
   }
   /*
-  제목 클릭 이벤트 
+  제목 클릭 이벤트
   - 활성화된 제목에 .active 추가 그외에 .active 제거
   - 활성화된 제목에 매칭되는 컨텐츠로 세로스크롤 (이때는 세로 스크롤에 제목 반응하는걸 off했다가 완료하면 on함)
   */
@@ -659,6 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
     popObserver.observe(el);
   });
   window.onload = function () {
+    console.log()
     setTimeout(function () {
       scrollTo(0, 0);
     }, 100);

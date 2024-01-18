@@ -1,19 +1,23 @@
 const back = () => {
 	const backBtn = document.querySelector(".back-btn");
 	const menuBtn = document.querySelector(".menu-btn");
-	
+
 	backBtn.addEventListener("click", () => {
 		if(document.referrer.includes('typeC_loan.html')) {
-			window.history.go(-2) 
+			sessionStorage.removeItem('userClickPage');
+			sessionStorage.setItem('userClickPage', 'loanDetail');
+			window.history.go(-2)
 		} else {
-			window.history.go(-1) 
+			sessionStorage.removeItem('userClickPage');
+			sessionStorage.setItem('userClickPage', 'loan');
+			window.history.go(-1)
 		}
 	})
 	menuBtn.addEventListener("click", () => {
 		if(document.referrer.includes('typeC_loan.html')) {
-			window.history.go(-2) 
+			window.history.go(-2)
 		} else {
-			window.history.go(-1) 
+			window.history.go(-1)
 		}
 	})
 }
@@ -43,7 +47,7 @@ const sheetOpen = () => {
 	const moreBtn = document.querySelectorAll(".more-btn");
 	const closeBtn = document.querySelectorAll(".close-btn");
 	const body = document.querySelector("body");
-	
+
 	moreBtn.forEach((item) => {
 		item.addEventListener("click", (e) => {
 			if (item.classList.contains("sheet01")) {
