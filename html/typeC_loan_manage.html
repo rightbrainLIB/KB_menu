@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KB UX : 사용자 테스트</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" />
+    <link href="../assets/css/loan.css" rel="stylesheet" />
+		<script src="../assets/js/loan.js"></script>
+  </head>
+  <body>
+		<header class="loan-header">
+			<div class="title-wrap">
+				<button type="button" class="back-btn"><span class="blind">뒤로가기</span></button>
+				<h2>대출관리</h2>
+			</div>
+			<div>                
+				<button type="button" class="home-btn"><span class="blind">홈</span></button>
+				<button type="button" class="menu-btn"><span class="blind">메뉴</span></button>
+			</div>
+		</header>
+		<div class="contents">
+			<div class="pd16">
+				<div class="loan-num"><strong>진행중인 대출</strong> <span class="num">1</span>건</div>
+				<ul class="loan-ing-lists">
+					<li class="loan-ing-box">
+						<button type="button" class="more-btn"><span class="blind">더보기</span></button>
+						<div class="info">
+							<div class="label">신청중</div>
+							<p class="bold">KB 매직카대출(신차 구매용)</p>
+							<div class="date">심사완료일 <span class="num">2024.01.23</span></div>
+							<div class="date">신청유효기간 <span class="num">2024.02.06</span></div>
+						</div>
+						<div class="btns">
+							<button type="button" class="gray-btn">취소하기</button>
+							<button type="button" class="gray-btn">이어서하기</button>
+						</div>
+						<div class="detail-view-wrap">
+							<div class="btn-wrap">
+								<button type="button" class="detail-view-btn">상세보기</button>
+								<div class="detail-view">
+									<p class="info-alert">서류제출이 정상으로 완료되어 심사를 진행하고 있습니다. 필요한 경우 서류를 다시 제출하실 수 있습니다.</p>
+									<ul>
+										<li>신청유효기간 전날까지 서류를 제출하셔야 하며, 그 이후에는 대출 신청이 취소 처리될 수 있습니다. ‘이어서하기' 버튼을 통해 서류제출을 계속해 주세요. </li>
+										<li>KB국민은행 고객센터 1588-9999<br />영업점 직원 연견(0번-0번), 기타 대출상담 문의(0번-2번), 인터넷뱅킹 사용 문의처(0번-3번-1번)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="loan-num"><strong>받은 대출</strong> <span class="num">2</span>건</div>
+				<ul class="loan-ing-lists">
+					<li class="loan-ing-box">
+						<button type="button" class="more-btn sheet01"><span class="blind">더보기</span></button>
+						<div class="info">
+							<div class="label">신용대출</div>
+							<div class="label red">만기도래</div>
+							<p>KB금융전문인 우대대출</p>
+							<p class="account">371102-04-140099</p>
+							<div class="date">이자납부일 <span class="num">2024.01.29</span></div>
+							<div class="date">만기일 <span class="num">2024.02.29 (D-37)</span></div>
+							<div class="price-wrap">
+								<div class="price">
+									<span class="price-label">대출잔액</span>
+									<span class="num">2,532,180 <span class="won">원</span></span>
+								</div>
+								<div class="price">
+									<span class="price-label">대출원금</span>
+									<span class="num">50,000,000 <span class="won">원</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="btns">
+							<button type="button" class="gray-btn">대출기한연장</button>
+							<button type="button" class="gray-btn">이자/월부금 입금</button>
+						</div>
+					</li>
+					<li class="loan-ing-box">
+						<button type="button" class="more-btn sheet02"><span class="blind">더보기</span></button>
+						<div class="info">
+							<div class="label">담보대출</div>
+							<p>KB스타 아파트담보대출</p>
+							<p class="account">371102-04-140099</p>
+							<div class="date">이자납부일 <span class="num">2024.02.10</span></div>
+							<div class="date">만기일 <span class="num">2030.09.13</span></div>
+							<div class="price-wrap">
+								<div class="price">
+									<span class="price-label">대출잔액</span> 
+									<span class="num">79,135,666 <span class="won">원</span></span>
+								</div>
+								<div class="price">
+									<span class="price-label">대출원금</span> 
+									<span class="num">100,000,000 <span class="won">원</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="btns">
+							<button type="button" class="gray-btn">대출 상환</button>
+							<button type="button" class="gray-btn">이자/월부금 입금</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bar"></div>
+			<a href="./typeC_loan.html">
+				<div class="all-loan-view">
+					<div>
+						<p>추가 대출이 필요하다면</p>
+						<div class="arrow-btn">
+							대출 전체상품 보러가기
+						</div>
+					</div>
+					<img src="../assets/image/ic_loan_view.png" />
+				</div>
+			</a>
+		</div>
+		<div class="bottom-sheet sheet01"> 
+			<div class="sheet-top">
+				<h2>더보기 메뉴</h2>
+				<button type="button" class="close-btn"><span class="blind">닫기</span></button>
+			</div>
+			<ul>
+				<li>
+					<p>대출금 상환</p>
+				</li>
+				<li>
+					<p>대출한도 변경/ 해지</p>
+				</li>
+				<li>
+					<p>개인대출 금리인하 요구권</p>
+				</li>
+				<li>
+					<p>금리산정내역서 조회</p>
+				</li>
+				<li>
+					<p>통장자동대출 이자납입내역 조회</p>
+				</li>
+				<li>
+					<p>개인대출 통지서비스 변경</p>
+				</li>
+				<li>
+					<p>개인대출 할부금(이자) 납일일 변경</p>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom-sheet sheet02">
+			<div class="sheet-top">
+				<h2>더보기 메뉴</h2>
+				<button type="button" class="close-btn"><span class="blind">닫기</span></button>
+			</div>
+			<ul>
+				<li>
+					<p>대출한도 변경/ 해지상환</p>
+				</li>
+				<li>
+					<p>대출 기한연장</p>
+				</li>
+				<li>
+					<p>개인대출 금리인하 요구권</p>
+				</li>
+				<li>
+					<p>금리산정내역서 조회</p>
+				</li>
+				<li>
+					<p>통장자동대출 이자납입내역 조회</p>
+				</li>
+				<li>
+					<p>개인대출 통지서비스 변경</p>
+				</li>
+				<li>
+					<p>개인대출 할부금(이자) 납일일 변경</p>
+				</li>
+			</ul>
+		</div>
+		<div class="dim"></div>
+	</body>
+	</html>
