@@ -4,12 +4,8 @@ const back = () => {
 
 	backBtn.addEventListener("click", () => {
 		if(document.referrer.includes('typeC_loan.html')) {
-			sessionStorage.removeItem('userClickPage');
-			sessionStorage.setItem('userClickPage', 'loanDetail');
 			window.history.go(-2)
 		} else {
-			sessionStorage.removeItem('userClickPage');
-			sessionStorage.setItem('userClickPage', 'loan');
 			window.history.go(-1)
 		}
 	})

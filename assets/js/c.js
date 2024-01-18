@@ -659,7 +659,6 @@ document.addEventListener("DOMContentLoaded", () => {
     popObserver.observe(el);
   });
   window.onload = function () {
-    console.log()
     setTimeout(function () {
       scrollTo(0, 0);
     }, 100);
